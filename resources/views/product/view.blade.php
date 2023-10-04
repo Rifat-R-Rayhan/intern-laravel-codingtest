@@ -29,11 +29,12 @@
                 // Function to fetch and display data
                 function fetchData(searchTerm, route) {
                     $.ajax({
-                        type: "GET",
-                        url: route,
+                        type: "POST",
+                        url: {{route('product_search')}},
                     });
                 }
             });
         </script>
     </div>
+
 </x-app-layout>
