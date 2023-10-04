@@ -27,6 +27,7 @@ Route::middleware('auth')->group(function () {
 
 
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/search', [ProductController::class, 'searchProduct'])->name('product_search');
 });
 
 require __DIR__.'/auth.php';
